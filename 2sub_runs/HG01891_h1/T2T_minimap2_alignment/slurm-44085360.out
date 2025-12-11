@@ -1,0 +1,40 @@
+
+module load samtools/1.14
+LD_RUN_PATH=/common/software/install/migrated/gcc/7.2.0/lib64:/common/software/install/migrated/isl/0.18_gcc7.2.0/lib:/common/software/install/migrated/mpc/1.0.3_gcc7.2.0/lib:/common/software/install/migrated/mpfr/3.1.6_gcc7.2.0/lib:/common/software/install/migrated/gmp/6.1.2_gcc7.2.0/lib:/common/software/install/migrated/bzip2/1.0.6-gcc7.2.0/lib; export LD_RUN_PATH;
+LD_LIBRARY_PATH=/common/software/install/migrated/isl/0.18_gcc7.2.0/lib:/common/software/install/migrated/mpc/1.0.3_gcc7.2.0/lib:/common/software/install/migrated/mpfr/3.1.6_gcc7.2.0/lib:/common/software/install/migrated/gmp/6.1.2_gcc7.2.0/lib:/common/software/install/migrated/bzip2/1.0.6-gcc7.2.0/lib:/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/lib:/common/software/install/migrated/cuda/10.0/lib64:/common/software/install/migrated/gcc/7.2.0/lib64; export LD_LIBRARY_PATH;
+CPATH=/common/software/install/migrated/gcc/7.2.0/include:/common/software/install/migrated/isl/0.18_gcc7.2.0/include:/common/software/install/migrated/mpc/1.0.3_gcc7.2.0/include:/common/software/install/migrated/mpfr/3.1.6_gcc7.2.0/include:/common/software/install/migrated/gmp/6.1.2_gcc7.2.0/include:/common/software/install/migrated/bzip2/1.0.6-gcc7.2.0/include:/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/include:/common/software/install/migrated/cuda/10.0/include; export CPATH;
+INFOPATH=/common/software/install/migrated/gcc/7.2.0/share/info; export INFOPATH;
+LIBRARY_PATH=/common/software/install/migrated/gcc/7.2.0/lib64:/common/software/install/migrated/isl/0.18_gcc7.2.0/lib:/common/software/install/migrated/mpc/1.0.3_gcc7.2.0/lib:/common/software/install/migrated/mpfr/3.1.6_gcc7.2.0/lib:/common/software/install/migrated/gmp/6.1.2_gcc7.2.0/lib:/common/software/install/migrated/bzip2/1.0.6-gcc7.2.0/lib:/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/lib:/common/software/install/migrated/cuda/10.0/lib64; export LIBRARY_PATH;
+MANPATH=/common/software/install/migrated/samtools/1.14_gcc-7.2.0/share/man:/common/software/install/migrated/gcc/7.2.0/share/man:/common/software/install/migrated/bzip2/1.0.6-gcc7.2.0/share/man:/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/share/man::/opt/puppetlabs/puppet/share/man:/opt/slurm/rocky8/ofed-24.10/x86_64/24.11.6/share/man:/opt/slurm/rocky8/ofed-24.10/x86_64/24.11.6/share/man:/opt/slurm/rocky8/ofed-24.10/x86_64/24.11.6/share/man; export MANPATH;
+_LMFILES_=/common/software/modulefiles/migrated/hpc/anaconda/miniconda3_4.8.3-jupyter:/common/software/modulefiles/migrated/hpc/cuda/10.0:/common/software/modulefiles/migrated/common/xz-utils/5.2.3_gcc7.2.0:/common/software/modulefiles/migrated/common/bzip2/1.0.6-gnu7.2.0_PIC:/common/software/modulefiles/migrated/common/gmp/6.1.2_gcc7.2.0:/common/software/modulefiles/migrated/common/mpfr/3.1.6_gcc7.2.0:/common/software/modulefiles/migrated/common/mpc/1.0.3_gcc7.2.0:/common/software/modulefiles/migrated/common/isl/0.18_gcc7.2.0:/common/software/modulefiles/migrated/common/gcc/7.2.0:/common/software/modulefiles/migrated/common/samtools/1.14; export _LMFILES_;
+LOADEDMODULES=anaconda/miniconda3_4.8.3-jupyter:cuda/10.0:xz-utils/5.2.3_gcc7.2.0:bzip2/1.0.6-gnu7.2.0_PIC:gmp/6.1.2_gcc7.2.0:mpfr/3.1.6_gcc7.2.0:mpc/1.0.3_gcc7.2.0:isl/0.18_gcc7.2.0:gcc/7.2.0:samtools/1.14; export LOADEDMODULES;
+__MODULES_LMTAG=xz-utils/5.2.3_gcc7.2.0\&auto-loaded:bzip2/1.0.6-gnu7.2.0_PIC\&auto-loaded:gmp/6.1.2_gcc7.2.0\&auto-loaded:mpfr/3.1.6_gcc7.2.0\&auto-loaded:mpc/1.0.3_gcc7.2.0\&auto-loaded:isl/0.18_gcc7.2.0\&auto-loaded:gcc/7.2.0\&auto-loaded; export __MODULES_LMTAG;
+FPATH=/common/software/install/migrated/gcc/7.2.0/include:/common/software/install/migrated/isl/0.18_gcc7.2.0/include:/common/software/install/migrated/mpc/1.0.3_gcc7.2.0/include:/common/software/install/migrated/mpfr/3.1.6_gcc7.2.0/include:/common/software/install/migrated/gmp/6.1.2_gcc7.2.0/include:/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/include:/common/software/install/migrated/cuda/10.0/include; export FPATH;
+PKG_CONFIG_PATH=/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/lib/pkgconfig; export PKG_CONFIG_PATH;
+INCLUDE=/common/software/install/migrated/gcc/7.2.0/include:/common/software/install/migrated/isl/0.18_gcc7.2.0/include:/common/software/install/migrated/mpc/1.0.3_gcc7.2.0/include:/common/software/install/migrated/mpfr/3.1.6_gcc7.2.0/include:/common/software/install/migrated/gmp/6.1.2_gcc7.2.0/include:/common/software/install/migrated/bzip2/1.0.6-gcc7.2.0/include:/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/include; export INCLUDE;
+CPLUS_INCLUDE_PATH=/common/software/install/migrated/gcc/7.2.0/include:/common/software/install/migrated/isl/0.18_gcc7.2.0/include:/common/software/install/migrated/mpc/1.0.3_gcc7.2.0/include:/common/software/install/migrated/mpfr/3.1.6_gcc7.2.0/include:/common/software/install/migrated/gmp/6.1.2_gcc7.2.0/include:/common/software/install/migrated/bzip2/1.0.6-gcc7.2.0/include:/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/include:/common/software/install/migrated/cuda/10.0/include; export CPLUS_INCLUDE_PATH;
+__MODULES_SHARE_LD_LIBRARY_PATH=/common/software/install/migrated/gcc/7.2.0/lib64:2; export __MODULES_SHARE_LD_LIBRARY_PATH;
+__MODULES_LMALTNAME=anaconda/miniconda3_4.8.3-jupyter\&as\|anaconda/latest:xz-utils/5.2.3_gcc7.2.0\&as\|xz-utils/default\&as\|xz-utils/latest; export __MODULES_LMALTNAME;
+__MODULES_SHARE_MANPATH=:1; export __MODULES_SHARE_MANPATH;
+C_INCLUDE_PATH=/common/software/install/migrated/gcc/7.2.0/include:/common/software/install/migrated/isl/0.18_gcc7.2.0/include:/common/software/install/migrated/mpc/1.0.3_gcc7.2.0/include:/common/software/install/migrated/mpfr/3.1.6_gcc7.2.0/include:/common/software/install/migrated/gmp/6.1.2_gcc7.2.0/include:/common/software/install/migrated/bzip2/1.0.6-gcc7.2.0/include:/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/include:/common/software/install/migrated/cuda/10.0/include; export C_INCLUDE_PATH;
+PATH=/common/software/install/migrated/samtools/1.14_gcc-7.2.0/bin/:/common/software/install/migrated/gcc/7.2.0/bin:/common/software/install/migrated/bzip2/1.0.6-gcc7.2.0/bin:/common/software/install/migrated/xz-utils/5.2.3_gcc7.2.0/bin:/common/software/install/migrated/cuda/10.0/bin:/common/software/install/migrated/anaconda/miniconda3_4.8.3-jupyter/bin:/opt/msi/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin; export PATH;
+test 0;
+
+szMinimapExe=/projects/standard/hsiehph/shared/software/packages/minimap2/minimap2
+szReference=/projects/standard/hsiehph/shared/hsiehph_shared/assemblies/CHM13/T2T/v2.0/ucsc_fixed_chr_order/hs1.fa
+szQuery=/projects/standard/hsiehph/gordo893/Matt/T2T_minimap2_alignment/HG01891#1#JAGYVO010000020.1:12285000-12385000.fa
+szOutput=alignments.paf
+# --eqx and -c are necessary to use rustybam liftover
+$szMinimapExe -t 10 --eqx -c --cs -x asm5 --secondary=no -s 25000 -K 8G $szReference $szQuery >$szOutput
+[M::mm_idx_gen::91.670*1.50] collected minimizers
+[M::mm_idx_gen::98.954*2.02] sorted minimizers
+[M::main::98.954*2.02] loaded/built the index for 25 target sequence(s)
+[M::mm_mapopt_update::107.889*1.93] mid_occ = 177
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 25
+[M::mm_idx_stat::114.715*1.88] distinct minimizers: 215125355 (92.06% are singletons); average occurrences: 1.455; average spacing: 9.958; total length: 3117292070
+[M::worker_pipeline::114.857*1.87] mapped 1 sequences
+[M::main] Version: 2.26-r1175
+[M::main] CMD: /projects/standard/hsiehph/shared/software/packages/minimap2/minimap2 -t 10 --eqx -c --cs -x asm5 --secondary=no -s 25000 -K 8G /projects/standard/hsiehph/shared/hsiehph_shared/assemblies/CHM13/T2T/v2.0/ucsc_fixed_chr_order/hs1.fa /projects/standard/hsiehph/gordo893/Matt/T2T_minimap2_alignment/HG01891#1#JAGYVO010000020.1:12285000-12385000.fa
+[M::main] Real time: 115.766 sec; CPU: 216.118 sec; Peak RSS: 12.109 GB
+szOutput2=alignments.bed
+cat $szOutput | awk '{print $6"\t"$8"\t"$9"\t"$1"\t"$3"\t"$4"\t"$5 }' >$szOutput2
