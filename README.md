@@ -10,9 +10,9 @@ In order to use the HMM for training and/or decoding the following is required:
 Previous runs can be found in the 9sub_runs directory
 
 Walkthrough of the pipeline:
-1. Run ARCkmerFinder with the assembly and save the file name 'windows_across_genome_with_zero_and_nonzero_matching_kmers_and_including_introgressed_and_no_introgressed_regions.bed'
+1. Run ARCkmerFinder with the assembly and save the file named 'windows_across_genome_with_zero_and_nonzero_matching_kmers_and_including_introgressed_and_no_introgressed_regions.bed'
 2. Create a directory named after the assembly of interest (i.e. HG002_h1)
-3. Create subdirectories'altai, denisova, chag, vindija
+3. Create subdirectories altai, denisova, chag, vindija
 4. Create and activate the conda environment
 5. Run the train_decode_analyze_pipeline.py script
     - './train_decode_analyze_pipeline.py [assembly name]'
@@ -29,6 +29,6 @@ For making individual calls (must be done in this order):
     - python3 main.py mutrate HG01891_h1/vidija/HG01891_h1_counts.bed HG01891_h1/vidija/mutrate_eq1MbBin/HG01891_h1_mutrates.txt
 2. Training
     - python3 main.py train none HG01891_h1/vidija/HG01891_h1_counts.bed HG01891_h1/vidija/mutrate_eq1MbBin/HG01891_h1_mutrates.txt HG01891_h1/vidija/mutrate_eq1MbBin/trained.json
-    - The 'none' flag was for testing and MUST be included
+    - The 'none' argument was for testing and MUST be included
 3. Decoding
     - python3 main.py decode HG01891_h1/vidija/mutrate_eq1MbBin/trained.json HG01891_h1/vidija/HG01891_h1_counts.bed HG01891_h1/vidija/mutrate_eq1MbBin/HG01891_h1_mutrates.txt HG01891_h1/vidija/mutrate_eq1MbBin/probs_and_path.tsv
