@@ -43,8 +43,8 @@ def main():
                 counts_bed,
                 mut_out
             ]
-            # print(f'About to execute: {mutrate_command}')
-            # subprocess.run(mutrate_command, check=True)
+            print(f'About to execute: {mutrate_command}')
+            subprocess.run(mutrate_command, check=True)
 
             # Training step
             train_out = os.path.join(arc_dir, 'mutrate_eq1MbBin', 'trained.json')
@@ -57,8 +57,8 @@ def main():
                 mut_out,
                 train_out
             ]
-            # print(f'About to execute: {train_command}')
-            # subprocess.run(train_command, check=True)
+            print(f'About to execute: {train_command}')
+            subprocess.run(train_command, check=True)
 
             # Decoding step
             decode_out = os.path.join(arc_dir, 'mutrate_eq1MbBin', 'probs_and_path.tsv')
@@ -71,16 +71,16 @@ def main():
                 mut_out,
                 decode_out
             ]
-            # print(f'About to execute: {decode_command}')
-            # subprocess.run(decode_command, check=True)
+            print(f'About to execute: {decode_command}')
+            subprocess.run(decode_command, check=True)
             
             # Analysis step
             plot_kmers_vs_probs_command = [
                 './plot_kmers_vs_probs.py',
                 decode_out
             ]
-            # print(f'About to execute: {plot_kmers_vs_probs_command}')
-            # subprocess.run(plot_kmers_vs_probs_command, check=True)
+            print(f'About to execute: {plot_kmers_vs_probs_command}')
+            subprocess.run(plot_kmers_vs_probs_command, check=True)
             
             plot_consecutive_arc_states_command = [
                 './plot_consecutive_arc_states.py',
